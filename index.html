@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nom du site</title>
+
+    <!-- ci-dessous on fait les liens entre cette page html et les autres fichiers dont on a besoin pour notre rendu : -->
+
+    <!-- feuille de styles interface  -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
+    <!-- jquery -->
+    <script defer src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- script -->
+    <script defer src="main.js"></script>
+</head>
+<body>
+
+    <!-- et nous voilà dans le coeur du fichier html, en gros ce qui va s'afficher :  -->
+    <h1>Calculs de renta</h1>
+
+    <!-- on met un formulaire :  -->
+    <form action="" id="form">
+
+                    <!-- 1. infos relatives à l'achat  -->
+
+        <label for="prix_achat">Prix d'achat</label>
+        <input type="number" name="prix_achat" id="prix_achat">
+        </input>       
+
+        <label for="prix_travaux">Prix des travaux</label>
+        <input type="number" name="prix_travaux" id="prix_travaux">
+        </input>
+        <!-- Rajouter  une case ancien et une case neuf qui 
+        permettent de définir automatiquement les frais de notaire. 
+        Mais conserver la possibilité de remplir manuellement. Unité en %   -->
+        <label for="frais_notaire">frais de notaire</label>
+        <input type="number" name="frais_notaire" id="frais_notaire">
+        </input>   
+
+        <label for="prix_meubles">Prix des meubles</label>
+        <input type="number" name="prix_meubles" id="prix_meubles">
+        </input>
+
+                     <!-- 2. infos relatives à la location  -->
+
+        <label for="loyer_hc">Loyer mensuel hors charges</label>
+        <input type="number" name="loyer_hc" id="loyer_hc">
+        </input>
+           
+        <label for="vacances_locatives">Vacances locatives</label>
+        <input type="number" name="vacances_locatives" id="vacances_locatives">
+        </input>
+
+                     <!-- 3. infos relatives au crédit  -->
+        
+        <label for="apport">Apport</label>
+        <input type="number" name="apport" id="apport">
+        </input>
+
+        <label for="duree_credit">Durée du crédit</label>
+        <input type="number" name="duree_credit" id="duree_credit">
+        </input>
+
+        <label for="taux_interet">Taux d'intérêt</label>
+        <input type="number" name="taux_interet" id="taux_interet">
+        </input>
+
+        <label for="assurance_empr">Assurance emprunteur</label>
+        <input type="number" name="assurance_empr" id="assurance_empr">
+        </input>
+        
+                     <!-- 4. infos relatives à la situation de l'investisseur  -->
+
+        <label for="salaire_net_imp">Salaire net imposable</label>
+        <input type="number" name="salaire_net_imp" id="salaire_net_imp">
+        </input>
+
+        <!-- Valeur en % d'agumentation chaque année  -->
+        <label for="evol_carriere">Évolution de carrière annuelle</label>
+        <input type="number" name="evol_carriere" id="evol_carriere">
+        </input>
+
+        <label for="revenus_loc_existants">Revenus locatifs imposables existants</label>
+        <input type="number" name="revenus_loc_existants" id="revenus_loc_existants">
+        </input>
+
+                      <!-- 5. infos relatives aux charges du bien  --> 
+        
+        <label for="taxe_fonc">Taxe foncière</label>
+        <input type="number" name="taxe_fonc" id="taxe_fonc">
+        </input>
+
+        <label for="charges_locataire">Charges payées par le locataire</label>
+        <input type="number" name="charges_locataire" id="charges_locataire">
+        </input>
+
+        <label for="travaux_entretien">Charges payées par le locataire</label>
+        <input type="number" name="travaux_entretien" id="travaux_entretien">
+        </input>
+
+        <!-- Valeur en % du loyer, proposer des valeurs types  -->
+        <label for="frais_de_gestion">Frais_de_gestion</label>
+        <input type="number" name="frais_de_gestion" id="frais_de_gestion">
+        </input>
+
+        <label for="assurance_loyer_imp">Assurance loyer impayés</label>
+        <input type="number" name="assurance_loyer_imp" id="assurance_loyer_imp">
+        </input>
+
+        <label for="frais_compta">Frais de comptabilité</label>
+        <input type="number" name="frais_compta" id="frais_compta">
+        </input>
+
+
+                      
+
+    </form>
+
+    
+    
+    <!-- ici on va afficher le résultat désiré, et pour voir les calculs, c'est dans main.js -->
+    <div id="result"></div>
+    
+</body>
+</html>

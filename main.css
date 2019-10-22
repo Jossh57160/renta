@@ -1,0 +1,17 @@
+h1, 
+#form, 
+#result {
+    width: 30vw;
+    margin-left: 35vw;
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 5vh;
+}
+
